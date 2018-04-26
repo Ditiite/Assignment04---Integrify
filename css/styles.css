@@ -20,7 +20,7 @@ body {
 /****** FIRST SECTION *******/
 .grid-item-1 {
     background-color: #171717;
-    padding: 50px;
+    padding: 50px 50px 0;
 }
 
 header {
@@ -67,6 +67,7 @@ nav a {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
+
 /* Small grid in header */
 .s-container {
     display: grid;
@@ -80,7 +81,11 @@ nav a {
 .small-car h3  {
     position: absolute;
     z-index: 2;
-    bottom: 50%;
+    bottom: 45%;
+    left: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 5px 15px;
 }
 
 .large-img h2,
@@ -88,7 +93,9 @@ nav a {
 .small-car h2 {
     position: absolute;
     z-index: 2;
-    bottom: 30%;
+    bottom: 20%;
+    left: 20px;
+    text-transform: capitalize;
 }
 
 .large-img p,
@@ -96,7 +103,9 @@ nav a {
 .small-car p {
     position: absolute;
     z-index: 2;
+    left: 20px;
     bottom: 10%;
+    color: rgb(114, 114, 114);
 }
 
 /* LARGE IMG */
@@ -110,6 +119,26 @@ nav a {
     width: 100%;
     height: 100%;
     z-index: 1;
+    opacity: 0.5;
+}
+
+.large-img h3 {
+    background-color: #00acf7;
+}
+/* Round img */
+#author-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    bottom: 10%;
+    left: 20px;
+    opacity: 1;
+}
+
+.large-img p {
+    left: 80px;
 }
 
 /* SMALL WATCH */
@@ -121,8 +150,14 @@ nav a {
 .small-watch img{
     width: 100%;
     height: 100%;
+    opacity: 0.5;
 }
 
+.small-car h3,
+.small-watch h3 {
+    background-color: #54a100;
+
+}
 /* SMALL CAR */
 .small-car {
     grid-column: 2;
@@ -134,4 +169,63 @@ nav a {
 .small-car img {
     width: 100%;
     height: 100%;
+    opacity: 0.5;
 }
+
+/********** LARGER GRID *************/
+.grid-item-2 {
+    background-color: rgb(232, 219, 219);
+    grid-template-rows: auto;
+    padding: 50px 60px;
+}
+
+.larger-grid {
+    display: grid;
+    grid-gap: 20px 20px;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 100px;
+}
+
+.larger-grid div {
+    background-color: white;
+}
+.larger-grid img {
+    width: 100%;
+}
+
+.l-grid-item1 {
+    grid-row: 1/7;
+}
+
+.l-grid-item2 {
+    grid-column: 1;
+    grid-row: 7/11;
+}
+
+.l-grid-item3 {
+    grid-column: 1;
+    grid-row: 11/19;
+}
+
+
+.l-grid-item3 .link-svg,
+.l-grid-item4 .quote {
+    width: 50px;
+}
+
+/**** col 2 ****/
+.l-grid-item4 {
+    grid-column: 2;
+    grid-row: 1/8;
+}
+.l-grid-item5 {
+    grid-column: 2;
+    grid-row: 8/15;
+}
+
+
+.l-grid-item6 {
+    grid-column: 2;
+    grid-row: 15/24;
+}
+
