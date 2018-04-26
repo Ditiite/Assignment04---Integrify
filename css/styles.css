@@ -204,7 +204,7 @@ nav a {
 
 .l-grid-item3 {
     grid-column: 1;
-    grid-row: 11/19;
+    grid-row: 11/17;
 }
 
 
@@ -226,6 +226,70 @@ nav a {
 
 .l-grid-item6 {
     grid-column: 2;
-    grid-row: 15/24;
+    grid-row: 15/20;
 }
 
+
+
+/**** col 3 ****/
+.l-grid-item7 {
+    grid-column: 3;
+    grid-row: 1/6;
+}
+
+.l-grid-item8 {
+    grid-column: 3;
+    grid-row: 6/11;
+}
+
+.l-grid-item9 {
+    grid-column: 3;
+    grid-row: 11/16;
+}
+
+.l-grid-item10 {
+    grid-column: 3;
+    grid-row: 16/21;
+}
+
+/**** Large grids numbers *****/
+#l-grid-numbers {
+    background-color: rgb(232, 219, 219);
+    text-align: center;
+   grid-column: span 3;
+}
+
+#l-grid-numbers ol li {
+    list-style: none;
+    display: inline;
+    padding: 5px 10px;
+    transition: ease-in-out 0.5s;
+}
+
+#l-grid-numbers li:hover {
+    background-color: #171717;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+#l-grid-numbers ol li:first-of-type:hover,
+#l-grid-numbers ol li:last-of-type:hover {
+    background-color: rgb(232, 219, 219);;
+    cursor: pointer;
+}
+
+#l-grid-numbers img:hover {
+    transform: scale(1.1);
+}
+
+#l-grid-numbers img {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    vertical-align: middle;
+    transition: 0.6s;
+}
