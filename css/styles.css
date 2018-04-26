@@ -9,11 +9,30 @@ body {
     margin: 0 auto;
 }
 
+h2 {
+    text-transform: capitalize;
+}
+
+.article-category {
+    color: #1c7d88;
+    font-size: 13px; 
+    font-weight: 700;
+}
+
+p {
+    color: rgb(122, 122, 122);
+}
+
+.p-large {
+    color: #171717;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 700;
+}
 /********** MAIN GRID **********/
 .grid-container {
     grid-column: 100%;
     grid-template-rows: auto auto auto auto;
-    border: 1px solid white;
 }
 
 
@@ -37,7 +56,8 @@ header {
     font-size: 25px;   
 }
 
-.fa{
+.fas,
+.fab {
     color: rgb(255, 255, 255);
 }
 
@@ -68,7 +88,7 @@ nav a {
     color: rgb(255, 255, 255);
 }
 
-/* Small grid in header */
+/*********** Small grid in header ***********/
 .s-container {
     display: grid;
     color: white;
@@ -108,7 +128,7 @@ nav a {
     color: rgb(114, 114, 114);
 }
 
-/* LARGE IMG */
+/***** LARGE IMG ******/
 .large-img {
     position: relative;
     grid-column: 1;
@@ -125,7 +145,8 @@ nav a {
 .large-img h3 {
     background-color: #00acf7;
 }
-/* Round img */
+
+/*********** Round img ***********/
 #author-img {
     width: 50px;
     height: 50px;
@@ -141,7 +162,7 @@ nav a {
     left: 80px;
 }
 
-/* SMALL WATCH */
+/******** SMALL WATCH ***************/
 .small-watch {
     grid-column: 2;
     position: relative;
@@ -158,7 +179,7 @@ nav a {
     background-color: #54a100;
 
 }
-/* SMALL CAR */
+/************* SMALL CAR ***************/
 .small-car {
     grid-column: 2;
     grid-row: 2;
@@ -189,35 +210,58 @@ nav a {
 .larger-grid div {
     background-color: white;
 }
+
 .larger-grid img {
     width: 100%;
 }
 
+.larger-grid p,
+.larger-grid h2 {
+    padding: 0 20px;
+}
+
 .l-grid-item1 {
-    grid-row: 1/7;
+    grid-row: 1/5;
 }
 
 .l-grid-item2 {
     grid-column: 1;
-    grid-row: 7/11;
+    grid-row: 5/9;
 }
 
 .l-grid-item3 {
     grid-column: 1;
-    grid-row: 11/17;
+    grid-row: 9/14;
 }
 
+.l-grid-item3 a {
+    text-align: center;
+    color: rgb(114, 114, 114);
+    text-decoration: none;
+    font-size: 15px;
+    padding: 20px;
+}
 
-.l-grid-item3 .link-svg,
+.fa-link {
+    color: rgb(114, 114, 114);
+
+}
+
+#quote {
+    width: 30px;
+    justify-self: center;
+}
+/* .l-grid-item3 .link-svg,
 .l-grid-item4 .quote {
     width: 50px;
-}
+} */
 
 /**** col 2 ****/
 .l-grid-item4 {
     grid-column: 2;
     grid-row: 1/8;
 }
+
 .l-grid-item5 {
     grid-column: 2;
     grid-row: 8/15;
@@ -229,7 +273,9 @@ nav a {
     grid-row: 15/20;
 }
 
-
+.author-rams {
+    text-align: center;
+}
 
 /**** col 3 ****/
 .l-grid-item7 {
