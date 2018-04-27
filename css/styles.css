@@ -30,7 +30,7 @@ p {
     font-weight: 700;
 }
 /********** MAIN GRID **********/
-.grid-container {
+.wrapper {
     grid-column: 100%;
     grid-template-rows: auto auto auto auto;
 }
@@ -338,4 +338,12 @@ nav a {
     border-radius: 50%;
     vertical-align: middle;
     transition: 0.6s;
+}
+
+
+/*********** Small image and tag grid **********/
+.grid-item-4 {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-row: roe 2;
 }
