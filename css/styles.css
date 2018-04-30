@@ -597,3 +597,14 @@ button {
     font-size: 13px;
     letter-spacing: 
 }
+
+.footer-copyright {
+    grid-column: span 4;
+    display: inline-flex;
+}
+
+.border-right {
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid #484848;
+}
