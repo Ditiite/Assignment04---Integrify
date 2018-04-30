@@ -7,44 +7,62 @@
     <title>Groovy Assignment-3 - Integrify</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/media.css" />
 
     <!-- font awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
         crossorigin="anonymous">
 
     <!-- font -->
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Source+Sans+Pro:400,600,700" rel="stylesheet">
 
 </head>
 
+<<<<<<< HEAD
 <body>
+=======
+<body class="wrapper">
+
+>>>>>>> 43aad51f29c80a46ffd80fdfe188468d5b236cd3
     <!-- HEADER + NAV + BIG IMG-->
-    <div class="grid-item-1">
+    <div class="top">
         <header>
-            <div class="" id="icons">
+            <div class="header" id="icons">
                 <i class="fab fa-facebook-f"></i>
                 <i class="fab fa-twitter"></i>
                 <i class="fas fa-camera-retro"></i>
                 <i class="fab fa-pinterest"></i>
             </div>
+<<<<<<< HEAD
             <div class="logo" >
                 <img src="images/logo.png" alt="Logo philosophy:">
             </div>
             <div class="search">
+=======
+            <div class="logo header">
+                <img src="images/logo.png" alt="Logo with name Philosophy">
+            </div>
+            <div class="search header">
+>>>>>>> 43aad51f29c80a46ffd80fdfe188468d5b236cd3
                 <input type="text" placeholder="SEARCH">
-                <i class="fas fa-search"></i>
+                <img src="images/icons/png/icon-search.png" alt="Search icon">
             </div>
         </header>
+
         <nav>
             <ul>
                 <li>
                     <a href="#">Home</a>
                 </li>
                 <li>
-                    <a href="#">Categories</a>
+                    <a href="#">Categories
+                        <i class="fas fa-angle-down"></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Blog</a>
+                    <a href="#">Blog
+                        <i class="fas fa-angle-down"></i>
+                    </a>
                 </li>
                 <li>
                     <a href="#">Styles</a>
@@ -59,7 +77,7 @@
         </nav>
         <div class="s-container">
             <div class="large-img">
-                <img src="images/thumbs/masonry/guitarman-400.jpg" alt="Men playing guitar" />
+                <img src="images/thumbs/featured/featured-guitarman.jpg" alt="Men playing guitar" />
                 <h3>Music</h3>
                 <h2>What your music preference says about you and your personality.</h2>
                 <img id="author-img" src="images/avatars/user-03.jpg" alt="Man with the glasses." />
@@ -81,6 +99,7 @@
     </div>
 
     <!-- MAIN GRID-->
+<<<<<<< HEAD
     <div class="grid-item-2">
         <div class="larger-grid">
 
@@ -200,54 +219,127 @@
                     </li>
                 </ol>
             </div>
-        </div>
-    </div>
+=======
+    <section class="articles">
 
-    <!-- POPULAR POST SECTION -->
-    <section class="grid-item-4">
-        <div class="popular-post">
-            <h3>Popular post</h3>
+        <div class="article span-m">
+            <img src="images/thumbs/masonry/lamp-400.jpg" alt="white lamp" />
+            <p>December 15, 2017</p>
+            <h2>Just a standartd format post.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a vestibulum tellus. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. </p>
+            <p class="article-category">Design, photography</p>
         </div>
-        <div class="pp-item1">
-            <img src="images/thumbs/small/wheel-150.jpg">
-            <h4>Visiting theme parks improves your health.</h4>
-            <p>By
-                <a href="#">John Doe</a> on December 16, 2014</p>
+
+        <div class="article span-l">
+            <img src="images/icons/icon-quote.svg" id="quote">
+            <p class="p-large">Good design is making something intelligible and memorable. Great design is making something memorable and
+                meaningful.
+            </p>
+            <p class="author author-rams">Dieter Rams</p>
+            <img src="images/thumbs/masonry/cookies-400.jpg" alt="Yellow narcis and cookies">
+            <p>December 15, 2017</p>
+            <h2>No sugar oatmeal Cookies</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a vestibulum tellus. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.</p>
+            <p class="article-category">Cooking, healty</p>
+>>>>>>> 43aad51f29c80a46ffd80fdfe188468d5b236cd3
         </div>
-        <div class="pp-item2">
-            <img src="images/thumbs/small/cookies-150.jpg">
-            <h4>Visiting theme parks improves your health.</h4>
-            <p>By
-                <a href="#">John Doe</a> on December 16, 2014</p>
+
+        <div class="article span-l">
+            <img src="images/thumbs/masonry/tulips-400.jpg" alt="Pink tullips and coffee" />
+            <p>December 15, 2017</p>
+            <h2>10 interesting facts about caffeine.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a vestibulum tellus. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.</p>
+            <p class="article-category">Health</p>
         </div>
-        <div class="pp-item3">
-            <img src="images/thumbs/small/tulips-150.jpg">
-            <h4>Visiting theme parks improves your health.</h4>
-            <p>By
-                <a href="#">John Doe</a> on December 16, 2014</p>
+        
+        <div class="article span-s">
+            <img src="images/thumbs/masonry/shutterbug-400.jpg" alt="girl with red hat and camera" />
+            <p>December 15, 2017</p>
+            <h2>Key Benefits of family photography.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a vestibulum tellus. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. </p>
+            <p class="article-category">Family, photography</p>
         </div>
-        <div class="pp-item4">
-            <img src="images/thumbs/small/shutterbug-150.jpg">
-            <h4>Visiting theme parks improves your health.</h4>
-            <p>By
-                <a href="#">John Doe</a> on December 16, 2014</p>
+
+        <div class="article span-l">
+            <img src="images/thumbs/masonry/gallery/gallery-1-400.jpg" />
+            <img src="images/thumbs/masonry/jump-400.jpg" />
+            <p>December 15, 2017</p>
+            <h2>Create meaningful family moments.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a vestibulum tellus. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.</p>
+            <p class="article-category">Family, relationship</p>
         </div>
-        <div class="pp-item5">
-            <img src="images/thumbs/small/beetle-150.jpg">
-            <h4>Visiting theme parks improves your health.</h4>
-            <p>By
-                <a href="#">John Doe</a> on December 16, 2014</p>
+
+        <div class="article span-m">
+            <img src="images/thumbs/masonry/wheel-400.jpg" alt="Panoramic wheel" />
+            <p>December 15, 2017</p>
+            <h2>Visiting theme parks improves your health.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a vestibulum tellus. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.</p>
+            <p class="article-category">Health, Lifestyle</p>
         </div>
-        <div class="pp-item6">
-            <img src="images/thumbs/small/salad-150.jpg">
-            <h4>Visiting theme parks improves your health.</h4>
-            <p>By
-                <a href="#">John Doe</a> on December 16, 2014</p>
+
+        <div class="article span-l">
+            <i class="fa fa-link fa-3x"></i>
+            <!-- <img src="images/icons/icon-link.svg" class="link-svg"/> -->
+            <p class="p-large">The only Resource you will need to start a blog using wordPress.</p>
+            <a href="https://colorlib.com">https://colorlib.com</a>
+            <img src="images/thumbs/masonry/beetle-400.jpg" alt="Small beetle car" />
+            <p class="author">John Doe December 29, 2017</p>
+            <h2>Throwback to the good old days.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a vestibulum tellus. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.</p>
+            <p class="article-category">Lifestyle</p>
         </div>
+
+        <div class="article span-m">
+            <img src="images/thumbs/masonry/guitarman-400.jpg" alt="Men playing guitar." />
+            <p>December 15, 2017</p>
+            <h2>What your music preference says about you and your personality.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a vestibulum tellus. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.</p>
+            <p class="article-category">Music, Lifestyle</p>
         </div>
-        <div class="philosophy">
-            <h3>About Philosophy</h3>
+    
+        <div class="article span-s">
+            <img src="images/thumbs/masonry/sydney-400.jpg" />
+            <p>December 15, 2017</p>
+            <h2>Planning your first trip to Sydney.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a vestibulum tellus. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.</p>
+            <p class="article-category">Travel Vacation</p>
         </div>
+
+        <div class="article span-m">
+            <img src="images/thumbs/masonry/fuji-400.jpg" alt="Fotocamera on top of white chair." />
+            <p>December 15, 2017</p>
+            <h2>What your music preference says about you and your personality.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a vestibulum tellus. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.</p>
+            <p class="article-category">Music, Lifestyle</p>
+        </div>
+        <div id="l-grid-numbers" class="article">
+            <ol>
+                <li>
+                    <img src="images/icons/icon-arrow-left.svg" alt="arrow to the left" />
+                </li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>...</li>
+                <li>8</li>
+                <li>
+                    <img src="images/icons/icon-arrow-right.svg" alt="Arrow pointing to the right." />
+                </li>
+            </ol>
+        </div>
+<<<<<<< HEAD
         <div class="philosophy-p">
             <p>Donec sollicitudin molestie malesuada. Nulla quis lorem ut 
                 libero malesuada feugiat. Pellentesque in ipsum id orci porta dapibus. 
@@ -259,11 +351,76 @@
             <i class="fab fa-twitter"></i>
             <i class="fas fa-camera-retro"></i>
             <i class="fab fa-pinterest"></i>
+=======
+    </section>
+
+    <!-- POPULAR POST SECTION -->
+    <section class="grid-item-4">
+
+        <div class="posts">
+            <div class="post post-name">
+                <h3>Popular post</h3>
+            </div>
+            <div class="post">
+                <img class="post-img" src="images/thumbs/small/wheel-150.jpg">
+                <h4 class="post-title">Visiting theme parks improves your health.</h4>
+                <p>By
+                    <a href="#">John Doe</a> on December 16, 2014</p>
+            </div>
+            <div class="post">
+                <img class="post-img" src="images/thumbs/small/cookies-150.jpg">
+                <h4 class="post-title">Visiting theme parks improves your health.</h4>
+                <p>By
+                    <a href="#">John Doe</a> on December 16, 2014</p>
+            </div>
+            <div class="post">
+                <img class="post-img" src="images/thumbs/small/tulips-150.jpg">
+                <h4 class="post-title">Visiting theme parks improves your health.</h4>
+                <p>By
+                    <a href="#">John Doe</a> on December 16, 2014</p>
+            </div>
+            <div class="post">
+                <img class="post-img" src="images/thumbs/small/shutterbug-150.jpg">
+                <h4 class="post-title">Visiting theme parks improves your health.</h4>
+                <p>By
+                    <a href="#">John Doe</a> on December 16, 2014</p>
+            </div>
+            <div class="post">
+                <img class="post-img" src="images/thumbs/small/beetle-150.jpg">
+                <h4 class="post-title">Visiting theme parks improves your health.</h4>
+                <p>By
+                    <a href="#">John Doe</a> on December 16, 2014</p>
+            </div>
+            <div class="post">
+                <img class="post-img" src="images/thumbs/small/salad-150.jpg">
+                <h4 class="post-title">Visiting theme parks improves your health.</h4>
+                <p>By
+                    <a href="#">John Doe</a> on December 16, 2014</p>
+            </div>
+>>>>>>> 43aad51f29c80a46ffd80fdfe188468d5b236cd3
         </div>
-        <div class="tag-title">
-            <h3>Tags</h3>
+        <div class="philosophy">
+            <div class="philo">
+                <h3>About Philosophy</h3>
+            </div>
+            <div class="philosophy-p philo">
+                <p>Donec sollicitudin urna elit. Phasellus elementum lacus vel sem consectetur, in euismod diam hendrerit. Nulla
+                    in hendrerit elit. Etiam volutpat ornare scelerisque.Donec sollicitudin urna elit. Phasellus elementum lacus
+                    vel sem consectetur, in euismod diam hendrerit. Nulla in hendrerit elit. Etiam volutpat ornare scelerisque.</p>
+            </div>
+            <div class="philo">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fas fa-camera-retro"></i>
+                <i class="fab fa-pinterest"></i>
+            </div>
+            
         </div>
+
         <div class="tags">
+            <div class="tag-title">
+                <h3>Tags</h3>
+            </div>
             <ul>
                 <li><a>Salad</a></li>
                 <li><a>Recipe</a></li>
@@ -280,10 +437,47 @@
         </div>
     </section>
     <!-- FOOTER -->
-    <footer class="grid-item-5">
+    <footer class="footer">
+        <div>
+            <h4>Quick links</h4>
+            <a href="#">Home</a>
+            <a href="#">Blog</a>
+            <a href="#">Style</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div>
+            <h4>Archives</h4>
+            <a href="#">January 2018</a>
+            <a href="#">December 2017</a>
+            <a href="#">November 2017</a>
+            <a href="#">October 2017</a>
+            <a href="#">September 2017</a>
+            <a href="#">August 2017</a>
+        </div>
+        <div>
+            <h4>Socila</h4>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">Pinterest</a>
+            <a href="#">Google+</a>
+            <a href="#">LinkedIn</a>
+        </div>
+        <div>
+            <h4>Our newsletter</h4>
+            <p>Sit vel delectus amet officiis repudiandae est voluptatem. Tempora 
+                maxime provident nisi et fuga et enim exercitationem ipsam. Culpa consequatur occaecati.</p>
+            <div>
+                <img src="images/icons/png/icon-mail.png" alt="Icone of envelope" />
+                <input type="email" placeholder="Email Address">
+                <button>Send</button>
+            </div>
+                
 
+        </div>
     </footer>
-
 
 </body>
 
