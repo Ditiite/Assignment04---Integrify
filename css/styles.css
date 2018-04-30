@@ -544,6 +544,7 @@ footer {
 
 .footer a {
     color: #414141;
+    line-height: 35px;
     text-decoration: none;
 }
 
@@ -599,6 +600,7 @@ button {
 }
 
 .footer-copyright {
+    margin: 50px 0;
     grid-column: span 4;
     display: inline-flex;
 }
