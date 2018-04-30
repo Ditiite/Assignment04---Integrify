@@ -18,7 +18,7 @@ h2 {
 
 .article-category {
     color: #1c7d88;
-    font-size: 1vw; 
+    font-size: 1.2vw; 
     font-weight: 700;
 }
 
@@ -32,53 +32,43 @@ p {
     text-align: center;
     font-weight: 700;
 }
-/********** MAIN GRID **********/
-.wrapper {
-    grid-column: 100%;
-    grid-template-rows: auto auto auto auto;
-}
 
 
 /****** FIRST SECTION *******/
 .grid-item-1 {
     background-color: #171717;
-    padding: 50px 50px 0;
+    padding: 60px 60px 0;
 }
 
 header {
-    display: inline-flex;
-    justify-content: space-between;
-    width: 100%; 
-}
-
-header {
-    background-image: url(../images/logo.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 30px 10px;
+    display: grid;
+    grid-template-columns: 25% 50% 25%; 
 }
 
 
 #icons i {
-    font-size: 25px; 
+    grid-column: 1;
+    font-size: 2vw; 
     margin: 10px;  
+    color: rgb(255, 255, 255);
 }
 
 input {
+    grid-column: 3;
     background-color: transparent;
     font-size: 1.5vw;
     border: none;
     color: white;
 }
 
-#icons i,
-.search {
-    margin: 10px;
+.logo {
+    grid-column: 2;
 }
 
-.fas,
-.fab {
-    color: rgb(255, 255, 255);
+.logo img {
+    width: 50%;
+    object-fit: scale-down;
+    object-position: center;
 }
 
 nav {
