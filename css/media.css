@@ -1,8 +1,20 @@
 /************* MEDIA  STYLES ************/
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1200px) {
     .top {
         background-color: #171717;
         padding: 50px 50px 0;
     }
+    .large-img h2,
+    .small-watch h2,
+    .small-car h2 {
+        font-size: 21px;
+    }
     
+    .article {
+        max-width: 400px;
+    }
+
+    .l-grid-numbers {
+        grid-column: span 2;
+    }
 }
