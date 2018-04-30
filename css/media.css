@@ -1,0 +1,8 @@
+/************* MEDIA  STYLES ************/
+@media screen and (max-width: 1150px) {
+    .top {
+        background-color: #171717;
+        padding: 50px 50px 0;
+    }
+    
+}
