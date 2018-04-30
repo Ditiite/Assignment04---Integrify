@@ -92,6 +92,7 @@ input {
     vertical-align: middle;
 }
 
+
 /***** INPUT PLACEHOLDER SYLE ******/
 
 .search input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -158,14 +159,18 @@ nav a:hover {
     /*grid-auto-rows: minmax(150px, auto);*/
 }
 
+.s-container h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.7em; 
+    text-transform: uppercase;
+    padding: 5px 15px;
+}
+
 .large-img h3 {
     position: absolute;
     z-index: 2;
     bottom:45%;
     left: 20px;
-    text-transform: uppercase;
-    font-size: 1em;
-    padding: 5px 15px;
 }
 
 .small-watch h3,
@@ -174,9 +179,6 @@ nav a:hover {
     z-index: 2;
     bottom: 45%;
     left: 20px;
-    text-transform: uppercase;
-    font-size: 1em;
-    padding: 5px 15px;
 }
 
 .large-img h2,
@@ -588,15 +590,16 @@ footer {
 .e-mail input:-moz-placeholder { padding-bottom: 10px;}  /* Firefox 18- */
 
 button {
-    background-color: #045274;
+    background-color: #1d61a5;
     color: #fff;
-    height: 50px;
-    width: 70px;
+    height: 60px;
+    width: 90px;
     float: right;
     border: none;
     text-transform: uppercase;
     font-size: 13px;
-    letter-spacing: 
+    letter-spacing: 3px;
+    border-radius: 0 5px 5px 0;
 }
 
 .footer-copyright {
@@ -605,8 +608,3 @@ button {
     display: inline-flex;
 }
 
-.border-right {
-    padding-right: 10px;
-    margin-right: 10px;
-    border-right: 1px solid #484848;
-}
