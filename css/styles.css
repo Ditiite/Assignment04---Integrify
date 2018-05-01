@@ -34,21 +34,13 @@ p {
 }
 
 
-/********** 
-*********** MAIN GRID
-**********/
-.wrapper {
-    grid-column: 100%;
-    grid-template-rows: auto auto auto auto;
-}
-
 
 /********** 
 *********** FIRST SECTION 
 **********/
 .top {
     background-color: #171717;
-    padding: 50px 60px 0;
+    padding: 50px 260px 0;
 }
 
 header {
@@ -57,6 +49,7 @@ header {
     justify-content: space-between;
     padding: 30px 10px;
     width: 100%;
+    border-bottom: 1px solid #393939;
 }
 
 .header {
@@ -116,11 +109,10 @@ input {
 /***** Navigator ***/
 nav {
     text-align: center;
-    border-top: 1px solid #393939;
     font-size: 1em;
     padding: 30px;
     margin: 0 auto;
-    width: 800px;
+    width: auto;
 }
 
 ul {
@@ -150,56 +142,59 @@ nav a {
 nav a:hover {
     color: #fff;
 }
+
 /*********** Small grid in header ***********/
 .s-container {
     display: grid;
     color: white;
     grid-template-columns: 65% 1fr; 
-    grid-template-rows: 270px 270px;
-    /*grid-auto-rows: minmax(150px, auto);*/
+    grid-template-rows: 280px 280px;
 }
 
-.s-container h3 {
+.s-container-text {
+    position: absolute;
+    z-index: 2;
+    bottom: 1.5rem;
+    left: 40px;
+    right: 80px;
+}
+
+.s-container-text h3 {
+    display: inline-block;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 0.7em; 
+    font-size: 0.6em; 
     text-transform: uppercase;
     padding: 5px 15px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
 }
 
-.large-img h3 {
-    position: absolute;
-    z-index: 2;
-    bottom:45%;
-    left: 20px;
-}
-
-.small-watch h3,
-.small-car h3  {
-    position: absolute;
-    z-index: 2;
-    bottom: 45%;
-    left: 20px;
-}
-
-.large-img h2,
-.small-watch h2,
-.small-car h2 {
-    position: absolute;
-    z-index: 2;
-    bottom: 20%;
-    left: 20px;
+.s-container-text h1 {
     text-transform: capitalize;
     font-family: 'Libre Baskerville', serif;
+    margin: 20px 0;
+}
+
+.s-container img {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.small-watch h1,
+.small-car h1 {
+    margin: 10px 0;
+    font-size: 1.3em;
 }
 
 .large-img p,
 .small-watch p,
 .small-car p {
-    position: absolute;
-    z-index: 2;
-    left: 20px;
+    font-weight: 600;
     bottom: 20px;
-    color: rgb(114, 114, 114);
+    color: #949494;
+    font-size: 0.9em;
 }
 
 /***** LARGE IMG ******/
@@ -209,31 +204,25 @@ nav a:hover {
     grid-row: span 2;
 }
 
-.large-img img {
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0.5;
-}
 
 .large-img h3 {
     background-color: #00acf7;
 }
 
 /*********** Round img ***********/
-#author-img {
+.round-img {
+    display: inline-block;
+    width: 100%;
+}
+
+.round-img img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    position: absolute;
-    z-index: 2;
-    bottom: 10%;
-    left: 20px;
     opacity: 1;
-}
-
-.large-img p {
-    left: 80px;
+    float: left;
+    margin-top: -11px;
+    margin-right: 10px;
 }
 
 /******** SMALL WATCH ***************/
@@ -242,16 +231,9 @@ nav a:hover {
     position: relative;
 }
 
-.small-watch img{
-    width: 100%;
-    height: 100%;
-    opacity: 0.5;
-}
-
 .small-car h3,
 .small-watch h3 {
     background-color: #54a100;
-
 }
 
 /************* SMALL CAR ***************/
@@ -261,13 +243,6 @@ nav a:hover {
     position: relative;
 }
 
-
-.small-car img {
-    width: 100%;
-    height: 100%;
-    opacity: 0.5;
-}
-
 /********** LARGER GRID *************/
 .articles {
     background-color: rgb(232, 219, 219);
@@ -275,9 +250,11 @@ nav a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-template-rows: repeat(auto-fill, 10px);
-    grid-gap: 40px;
 }
 
+.article {
+    margin: 20px;
+}
 .article-category {
     color: #1c7d88;
     font-size: 1em; 
