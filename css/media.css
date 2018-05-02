@@ -1,14 +1,8 @@
 /************* MEDIA  STYLES ************/
 @media screen and (max-width: 1200px) {
-     header { 
-        grid-area:
-            "guitar-img guitar-img"
-            "watch beetle"
-    }
-
-    .large-img h2,
-    .small-watch h2,
-    .small-car h2 {
+    .small-watch h1,
+    .small-car h1 {
+        margin: 10px 0;
         font-size: 1em;
     }
     
@@ -16,16 +10,39 @@
         max-width: 400px;
     }
 
-    .l-grid-numbers {
-        grid-column: span 2;
-    }
-
+  
 
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (min-width: 1450px) {
     .top {
         background-color: #171717;
-        padding: 50px 60px 0;
+        padding: 50px 260px 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .s-container {
+        grid-template-columns: 50% 1fr; 
+        grid-template-rows: 200px 280px 280px;
+    }
+
+    .large-img {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .small-watch {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .small-car {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    .s-container-text h1 {
+        font-size: 1em;
     }
 }
