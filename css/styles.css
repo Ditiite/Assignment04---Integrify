@@ -5,7 +5,7 @@
 
 body {
     margin: 0 auto;
-    width: 100vw;
+    width: 100%;
     font-size: 18px; 
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -48,7 +48,6 @@ header {
     grid-template-columns: 1fr 2fr 1fr;
     justify-content: space-between;
     padding: 30px 10px;
-    width: 100%;
     border-bottom: 1px solid #393939;
 }
 
@@ -248,13 +247,12 @@ nav a:hover {
     background-color: rgb(232, 219, 219);
     padding: 60px 100px;
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-template-rows: repeat(auto-fill, 30px);
+    grid-template-rows: repeat(auto-fill, minmax(50px, 1fr));
+    grid-gap: 40px;
 }
 
-.article {
-    margin: 20px;
-}
 .article-category {
     color: #1c7d88;
     font-size: 1em; 
@@ -325,7 +323,6 @@ h3 {
     grid-row: span 13;
 }
 
-
 .article.span-m {
     grid-row: span 19;
 }
@@ -341,42 +338,6 @@ h3 {
 .article-img-space {
     margin-bottom: 20px;
 }
-
-
-/*
-.articles p,
-.articles h2 {
-    padding: 10px;
-}
-
-
-.l-grid-item3 a {
-    text-align: center;
-    color: rgb(114, 114, 114);
-    text-decoration: none;
-    font-size: 15px;
-    padding: 20px;
-}
-
-.fa-link {
-    color: rgb(114, 114, 114);
-
-}
-
-
-
-**** col 2 ****
-
-
-.l-grid-item5 img {
-    margin-bottom: 10px;
-}
-
-
-.author-rams {
-    text-align: center;
-}
-
 
 /**** Large grids numbers *****/
 #l-grid-numbers {
@@ -555,7 +516,7 @@ footer {
 }
 
 .e-mail img {
-    width: 25px;
+    width: 45px;
     padding: 15px;
     vertical-align: middle;
 }
