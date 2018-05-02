@@ -102,6 +102,10 @@ h3 {
     margin-top: -5px;
 }
 
+#audio:hover {
+    cursor: pointer;
+}
+
 #play-button {
     position: absolute;
     top: 36%;
