@@ -249,7 +249,7 @@ nav a:hover {
     padding: 60px 100px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-template-rows: repeat(auto-fill, 10px);
+    grid-template-rows: repeat(auto-fill, 30px);
 }
 
 .article {
@@ -318,11 +318,11 @@ h3 {
 }
 
 .article.span-xs {
-    grid-row: span 14;
+    grid-row: span 12;
 }
 
 .article.span-s {
-    grid-row: span 16;
+    grid-row: span 13;
 }
 
 
@@ -331,11 +331,11 @@ h3 {
 }
 
 .article.span-l {
-    grid-row: span 28;
+    grid-row: span 24;
 }
 
-.article.span-l {
-    grid-row: span 27;
+.article.span-xl {
+    grid-row: span 26;
 }
 
 .article-img-space {
