@@ -27,7 +27,7 @@ p {
 
 .p-large {
     color: #171717;
-    font-size: 2em;
+    font-size: 1.7em;
     text-align: center;
     font-weight: 700;
     font-family: 'Libre Baskerville', serif;
@@ -242,145 +242,6 @@ nav a:hover {
     position: relative;
 }
 
-/********** LARGER GRID *************/
-.articles {
-    background-color: rgb(232, 219, 219);
-    padding: 60px 100px;
-    display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(20, 50px));
-    grid-gap: 40px;
-}
-
-.article-category {
-    color: #1c7d88;
-    font-size: 1em; 
-    font-weight: 700;
-}
-
-.article h2 {
-    padding: 0 20px;
-    font-family: 'Libre Baskerville', serif;
-}
-
-h3 {
-    font-family: 'Libre Baskerville', serif;
-}
-
-.article p {
-    padding: 20px;
-    line-height: 30px;
-}
-
-.articles div {
-    background-color: white;
-}
-
-.article img {
-    width: 100%;
-}
-
-#quote {
-    text-align: center;
-}
-
-#quote p,
-.link-icon p {
-    line-height: 55px;
-}
-
-#quote img {
-    padding: 50px 0 0;
-    width: 35px;
-}
-
-.fa-link {
-    padding: 50px 0 0;
-}
-
-.link-icon a {
-    text-decoration: none;
-    color: #393939;
-}
-
-.link-icon {
-    text-align: center;
-}
-.span-l-link img {
-    margin-top: 20px;
-}
-
-.span-l-link {
-    grid-row: span 20;
-}
-
-.article.span-xs {
-    grid-row: span 12;
-}
-
-.article.span-s {
-    grid-row: span 13;
-}
-
-.article.span-m {
-    grid-row: span 15;
-}
-
-.article.span-l {
-    grid-row: span 22;
-}
-
-.article.span-xl {
-    grid-row: span 24;
-}
-
-.article-img-space {
-    margin-bottom: 20px;
-}
-
-/**** Large grids numbers *****/
-#l-grid-numbers {
-    background-color: rgb(232, 219, 219);
-    text-align: center;
-    grid-column: 1/-1;
-    justify-content: center;
-}
-
-#l-grid-numbers ol li {
-    list-style: none;
-    display: inline;
-    padding: 5px 10px;
-    transition: ease-in-out 0.5s;
-}
-
-#l-grid-numbers li:hover {
-    background-color: #171717;
-    border-radius: 5px;
-    cursor: pointer;
-    color: #fff;
-}
-
-#l-grid-numbers ol li:first-of-type:hover,
-#l-grid-numbers ol li:last-of-type:hover {
-    background-color: rgb(232, 219, 219);;
-    cursor: pointer;
-}
-
-#l-grid-numbers img:hover {
-    transform: scale(1.1);
-}
-
-#l-grid-numbers img {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 50%;
-    vertical-align: middle;
-    transition: 0.6s;
-}
 
 /*********** Small image and tag grid **********/
 .grid-item-4 {
@@ -465,6 +326,10 @@ h3 {
     list-style: none;
 }
 
+.tags li:hover {
+    background-color: #171717;
+    color: #fff;
+}
 
 /*************
 ************** FOOTER

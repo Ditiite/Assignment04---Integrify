@@ -124,6 +124,15 @@
         grid-template-columns:1fr;
     }
 
+    .p-large {
+        font-size: 1.2em;
+    }
+
+    #quote p, 
+    .link-icon p {
+        line-height: 30px;
+    }
+
     footer {
         padding: 10px;
     }
