@@ -126,7 +126,7 @@ nav li {
 }
 
 nav a {
-    font-size: 0.9em;
+    font-size: 1em;
     text-decoration: none;
     font-weight: 600;
     color: rgb(156, 156, 156);
@@ -249,7 +249,7 @@ nav a:hover {
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(50px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(20, 50px));
     grid-gap: 40px;
 }
 
@@ -312,7 +312,7 @@ h3 {
 }
 
 .span-l-link {
-    grid-row: span 25;
+    grid-row: span 20;
 }
 
 .article.span-xs {
@@ -324,15 +324,15 @@ h3 {
 }
 
 .article.span-m {
-    grid-row: span 19;
+    grid-row: span 15;
 }
 
 .article.span-l {
-    grid-row: span 24;
+    grid-row: span 22;
 }
 
 .article.span-xl {
-    grid-row: span 26;
+    grid-row: span 24;
 }
 
 .article-img-space {
@@ -442,7 +442,7 @@ h3 {
 }
 
 .tags {
-    grid-column: span 3;
+    grid-column: span 2;
     text-align: center;
 }
 
