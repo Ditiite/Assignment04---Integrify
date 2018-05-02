@@ -9,6 +9,9 @@
     .article {
         max-width: 400px;
     }
+    nav {
+        width: 80%;
+    }
 }
 
 @media screen and (min-width: 1450px) {
